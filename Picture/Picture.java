@@ -29,16 +29,42 @@ public class Picture
      * Draw this picture.
      */
     public void draw()
-    {
+    { 
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(-70);
+        window.moveVertical(-50);
+        window.changeSize(600);
+        window.makeVisible();
+        
         wall = new Square();
         wall.moveVertical(80);
         wall.changeSize(100);
         wall.makeVisible();
-
+       
         window = new Square();
-        window.changeColor("black");
+        window.changeColor("yellow");
         window.moveHorizontal(20);
         window.moveVertical(100);
+        window.makeVisible();
+        
+        
+        window = new Square();
+        window.changeColor("yellow");
+        window.moveHorizontal(60);
+        window.moveVertical(100);
+        window.makeVisible();
+        
+        window = new Square();
+        window.changeColor("yellow");
+        window.moveHorizontal(40);
+        window.moveVertical(100);
+        window.makeVisible();
+        
+        window = new Square();
+        window.changeColor("yellow");
+        window.moveHorizontal(40);
+        window.moveVertical(150);
         window.makeVisible();
 
         roof = new Triangle();
@@ -48,11 +74,32 @@ public class Picture
         roof.makeVisible();
 
         sun = new Circle();
-        sun.changeColor("yellow");
+        sun.changeColor("white");
         sun.moveHorizontal(180);
         sun.moveVertical(-10);
         sun.changeSize(60);
         sun.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("black");
+        sun.moveHorizontal(190);
+        sun.moveVertical(8);
+        sun.changeSize(10);
+        sun.makeVisible();
+        
+         sun = new Circle();
+        sun.changeColor("black");
+        sun.moveHorizontal(220);
+        sun.moveVertical(8);
+        sun.changeSize(10);
+        sun.makeVisible();
+        
+        window = new Square();
+        window.changeColor("green");
+        window.moveHorizontal(-70);
+        window.moveVertical(180);
+        window.changeSize(600);
+        window.makeVisible();
     }
 
     /**
